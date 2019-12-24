@@ -21,7 +21,7 @@ try {
     $mail->Port       = 465;
     $mail->setFrom('sergei6430896@mail.ru', 'Sergey Ostapuk'); // Адрес самой почты и имя отправителя
     // Получатель письма
-    $mail->addAddress('Lito6430896@gmail.com');  
+    $mail->addAddress('juglonkassletters@mail.ru');  
         // -----------------------
         // Само письмо
         // -----------------------
@@ -32,6 +32,7 @@ try {
         <b>Почта:</b> $email<br><br>
         <b>Сообщение:</b><br>$text";
 // Проверяем отравленность сообщения
+/*
 if ($mail->send()) {
     echo "$msg";
 } else {

@@ -1,0 +1,95 @@
+
+a {text-decoration: none;}
+		
+.back { font:normal 3em 'Agency FB'; color: #0074A3; position:absolute; top: 10px; right: 10%;}
+.back:hover {text-decoration: underline;}
+.how { color: #990000; }
+.to { color: #0074A3; }
+.make { color: #006600; }
+.demo { font: normal 2em 'Agency FB';}
+
+.clear {
+	margin-top: -1px;
+	height: 1px;
+	clear:both;
+	zoom: 1;
+}		
+/* Slider */
+.slider {
+	width: 900px;
+	margin: 50px auto;
+	padding: 0 30px;
+	position: relative;
+	overflow: hidden;
+}
+.slider::-moz-selection { background: transparent; color: #fff; text-shadow: none; }
+.slider::selection { background: transparent; color: #fff; text-shadow: none; }
+
+.slide-list {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+.slide-wrap {
+	position: relative;
+	left: 0px;
+	top: 0;
+	width: 10000000px;
+}
+.slide-item {
+	width: 290px;
+	float: left;
+	background: rgba(238, 238, 238, 0.335);
+}
+.slide-title {
+	font-size: 20px;
+	display: block;
+	text-align: center;
+	color: #000000;
+}
+.pricetop{
+	color: #fcac45;
+	
+	border-radius: 50px;
+}
+
+.navy {
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	height: 100%;
+	width: 30px;
+	cursor: pointer;
+}
+.slide-item a img{
+	border-radius: 50px;
+}
+.prev-slide {
+	left: 0;
+	background: #fcac45 url(bg/left-arrow.png) 11px 50% no-repeat;
+}
+.next-slide {
+	right: 0;
+	background: #fcac45 url(bg/right-arrow.png) 11px 50% no-repeat;
+	
+}
+
+@media screen and (max-width:1010px){
+    .slider{
+        width: 650px;
+	}
+	.slide-title {
+		font-size: 50px;
+	}
+	.slide-item {
+		width: 600px;
+		height: 500px;
+		float: left;
+		background: #eee;
+	}
+	.slide-item a img{
+		width: 600px;
+		height: 375px;
+	}
+	
+}

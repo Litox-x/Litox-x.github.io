@@ -1,0 +1,1013 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.5s ease-in;
+    color: #fcac45;
+}
+
+a{
+text-decoration: none;
+text-decoration-color: none;
+ 
+}
+li{
+    list-style: none;
+}
+body{
+    font-family: 'Neuton', serif;
+}
+header{
+    width: 100%;
+    
+background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #000000, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #000000,#240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 999998;
+    border-bottom: 3px solid #fcac45;
+}
+#top{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.header__logo{  
+    display: flex;
+    text-transform: uppercase;
+    color:#fff;
+    font-weight: 800;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-bottom: 15px;
+    
+}
+nav{
+    margin-top: 4%;
+    margin-left: 40%;
+}
+.topnav a{
+    color: #fff;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.topnav a:hover{
+    border-bottom: 3px solid #6c6c6c;
+    color: #fcac45;
+}
+.topnav .icon{
+    display: none;
+}
+/*MAIN PART*/
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+main .main__welcome{
+
+    /*background-image: url(images/juglonmain.jpg);*/
+display:flex;
+}
+.infotop{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    color:#fff;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.righttop{
+    display: flex;
+    margin-left: 25%;
+}
+.righttop h2{
+    margin-left: 5%;
+}
+.infotop h3 ul{
+    margin-left: 30px;
+}
+.infotop h3 ul li{
+    list-style-image: url(images/icon-phone.png);
+    border-bottom: 1px solid #000000;
+    
+}
+.infotop h3{
+    display: flex;
+    color: #000000;
+}
+
+.infotop img{
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+.infotop h2 p{
+    display: flex;
+    margin-left: 10px;
+}
+
+.infotop h2 a :hover{
+    color: #c31432 ;
+}
+
+.infotop h2 a {
+    color: #000000 ;
+}
+#righttop{
+    margin-left: 40%;
+}
+#fcac {
+display: flex;
+}
+.infotop h3 {
+    margin-left: 40px;
+}
+.welcome{
+    margin-left: 20px;
+}
+main .main__welcome h1{
+    color: #999999;
+    font-size: 44px;
+
+}
+main .main__welcome p{
+    color: #000000; 
+}
+.mycompany{
+    color: #fcac45;
+}
+/*2nd block*/
+.wrapper{
+    width: 76%;
+    margin: 0 auto;
+}
+main .main__about{
+    display: flex;
+    padding-top: 40px;
+}
+.about__right h1{
+    display: inline-block;
+    border-bottom: 3px solid  #fcac45;
+}
+.about__right{
+    margin-left:175px;
+
+}
+.about__right p{
+margin: 30px 0 10px 0;
+ color: #6c6c6c;
+ 
+}
+.about__right li{
+    color: #6c6c6c;
+    list-style-image: url(images/black1.png);
+padding-left: 20px;
+margin-top: 10px;
+font-style: inherit;
+}
+.mw-100{
+    min-width: 100%;
+}
+/*news*/
+.main__news{
+    display: flex;
+    
+}
+.main__newsleft{
+    width: 500px;
+    height: 350px;
+    margin: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display:flex;
+    cursor: pointer;
+    font-size: 25px;
+    color: #000000;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url(images/skno.jpg) ;
+}
+#centerl{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 44px;
+    color: black;
+    font-weight: bold;
+    border-bottom: #fcac45 dashed 3px;
+    padding-bottom: 25px;
+}
+.main__newsleft p{
+    background: #eeeeee;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.main__newsright{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 350px;
+    margin-top: 50px;
+    justify-content: center;
+}
+.newsrightcontent{
+    cursor: pointer;
+    background-color: #eeeeee;
+    width: 480px;
+    height: 100px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #000;
+   
+}
+.newsrightcontent p{
+    margin-left: 1%;
+    margin-top: 1%;
+    font-weight: bold;
+    color: #c31432;
+}
+.newsrightcontent img{
+    border: 1px solid #000;
+    width: 150px;
+    height: 80px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+
+/*3rd block */
+.main__team{
+background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     /* background: linear-gradient(45deg, #000000, #6c6c6c);*/
+    padding: 100px 0 10px 0;
+    color: #fff;
+}
+.team__cards{
+    margin-top: 2%;
+}
+.main__team h1{
+    text-align: center;
+    font-size: 44px;
+    padding-bottom: 30px;
+    border-bottom: 3px dashed #fcac45;
+}
+
+.photo{
+    background: #fff ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+.card{
+    margin: 0 40px;
+    display:flex;
+    border-bottom: 1px solid #fcac45;
+}
+.card a{
+    display: flex;
+    color:#eee;
+}
+.team__cards{
+    display: flex;
+}
+.name{
+    font-size: 20px;
+    margin: 20px auto;
+    margin-left: 5px;
+
+
+}
+.position{
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+.about__position{
+    font-size: 14px;
+}
+/*4th block*/
+.main__services h1{
+    font-size: 44px;
+    padding-bottom: 30px;
+    border-bottom: 3px dashed #fcac45;
+}
+.main__services{
+    text-align: center;
+    padding: 100px 0 165px 0;
+}
+.services__cards{
+    display: flex;
+}
+
+.services__card{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.discription {
+    color: #6c6c6c;
+    margin-top: 25px;
+    padding-bottom:20px ;
+    font-size: 25px;
+}
+.services__card p{
+    margin-top: 10px;
+    font-size: 15px;
+    border-bottom: 3px solid #000;
+}
+
+.card a:hover {
+opacity: 1;
+background-color: #eee;
+color: #000;
+}
+.services__card h4{
+    margin-top: 5px;
+    font-size: 20px;
+}
+/* Block 5th */
+.main__clients{
+  
+background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
+    padding: 100px 0 150px 0;
+    text-align: center;
+    color: #fff;
+    display: block;
+}
+.main__clients h1{
+    border-bottom: 3px solid #fcac45;
+    font-size: 44px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+.main__clients img{
+    margin-left: 70px;
+    margin-top: 10px;
+}
+/* 6 block */
+.main__info{
+    background: #fff;
+    padding: 100px 0 150px 0;
+    text-align: center;
+    color: #000;
+    
+}
+.main__info h1{
+    font-size: 44px;
+    padding-bottom: 30px;
+    border-bottom: 3px dashed #fcac45;
+}
+.info{
+    display: flex;
+}
+.time{
+    font-size: 20px;
+    text-align: left;
+    padding: 25px 40px 25px 25px;
+    margin-top: 50px;
+    color: #000;
+    
+}
+.tops{
+    text-align: center;
+    font-size: 30px;
+}
+.map{
+    margin-left: 100px;
+}
+.map p{
+    font-size: 25px;
+
+}
+.header__logo a {
+    color: #eee;
+}
+
+.header__logo :hover {
+    opacity: 0.6;
+}
+.time li {
+    font-style: italic;
+    border-bottom: 2px solid #fcac45;
+}
+.map p{
+    color:#000;
+    margin-top: 10px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border: 2px solid #000;
+}
+
+.Telephones{
+margin-left: 30%;
+margin-right: 30%;
+margin-top: 2%;
+
+border-radius: 10%;
+border-left: 2px solid #000000;
+
+border-right: 2px solid #000000;
+
+}
+.Telephones h3{
+    font-size: 25px;
+}
+.Telephones p{
+    font-size: 20px;
+
+}
+
+.Telephones li{
+    margin-top: 5px;
+    font-style: italic;
+    border-bottom: 2px solid #fcac45;
+   
+}
+
+/* footer */
+footer{
+    display: flex;
+}
+
+.social{
+    display: flex;
+    justify-content: left;
+}
+.social img{
+    margin-left:12px;
+    height: 30px;
+    width: 30px;
+    background-color: #fcac45;
+}
+.social img:hover{
+    opacity: 0.6;
+    background-color: #fff;
+}
+
+footer{
+width: 100%;
+height: auto;
+
+background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #000000, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #000000,#000000, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
+padding: 5px 0 5px 0;
+}
+
+/*Slider*/
+* {box-sizing:border-box}
+.slide-content{
+    text-align: center;
+    font-size: 50px;
+    background: #fcac45;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #000;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: #fcac45;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #fcac45;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*Preloader*/
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    /* фоновый цвет */
+    background: #F2C14E; /* Для браузеров, которые не поддерживают градиенты */
+ background: -webkit-linear-gradient(left, #F2C14E, #fcac45); /* Для Safari 5.1 - 6.0 */
+ background: -o-linear-gradient(left, #F2C14E, #fcac45); /* Для Opera 11.1 - 12.0 */
+ background: -moz-linear-gradient(left, #F2C14E, #fcac45); /* Для Firefox 3.6 - 15 */
+ background: linear-gradient(left, #F2C14E, #fca); /* Стандартный синтаксис */
+ background: #ff9966;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to left, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to left, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+    z-index: 1001;
+    
+  }
+  .backform{
+      margin-top: 20px;
+      background: #fcac45;
+      margin-left: 30%;
+      margin-right: 30%;
+      color: #eee;
+      font-size: 30px;
+      border-radius: 100px;
+  }
+  .backform a {
+      color: #eee;
+  }
+.backform :hover{
+    color: #6c6c6c;
+}
+  .preloader__image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+    -moz-animation: preloader-rotate 2s infinite linear;
+    -webkit-animation: preloader-rotate 2s infinite linear;
+    -o-animation: preloader-rotate 2s infinite linear;
+  }
+  /*main hits*/
+  .main__hits{
+    color: #eee;    
+    display: none;
+}
+  .main__hits h1{
+      font-size: 45px;
+      text-align: center;
+      border-bottom: 3px dashed #fcac45;
+      padding-bottom: 25px;
+  }
+  .hit__good h4{
+      color: #fcac45;
+      font-size: 40px;
+  }
+  #main__try{
+      display: block;
+  }
+  #main__try .hit__good h3{
+    font-size: 25px;
+}
+
+#main__try .hit__good h4{
+    font-size: 30px;
+}
+  .hit__good h3{
+    font-size: 40px;
+}
+   #midl{
+       margin-left: 5%;
+       margin-right: 5%;
+   }
+  
+  .hit__good{
+      margin-top: 5%;
+      color: #fff;
+    }
+  .hit__good img{
+    border: 3px solid #fcac45;
+    border-radius: 10px;
+
+  }
+  .hit__goods{
+      display: flex;
+      margin-bottom: 5%;
+      justify-content: center;
+  }
+  
+  .hit__good :hover{
+ opacity: 0.8;
+}
+  
+  @keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+    }
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+    -o-transition: 0.3s opacity;
+    -webkit-transition: 0.3s opacity;
+    -moz-transition: 0.3s opacity;
+  }
+  
+  .loaded .preloader {
+    display: none;
+    
+  }
+
+
+/* MEDIA */
+@media screen and (max-width:1010px){
+    .main__newsleft p{
+        font-size: 35px;
+    }
+    .newsrightcontent p{
+        font-size: 25px;
+        font-weight: bold;
+        color: #c31432;
+    }
+    #centerl{
+        font-size: 80px;
+    }
+    .main__newsleft{
+        margin: 0;
+        margin-top: 50px;
+        width: 80%;
+    }
+    .main__newsright{
+        margin: 0;
+        width: 90%;
+        height: 550px;
+        padding-top: 20px;
+    }
+    .newsrightcontent{
+        width: 100%;
+        height: 250px;
+    }
+    .newsrightcontent img{
+        width: 30%;
+        height: 140px;
+    }
+    .main__news{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+#righttop{
+    margin-left: 10%;
+}
+    .prev, .next {
+font-size: 60px;
+
+    }
+    #main__try{
+        display: none;
+    }
+    .main__hits{
+        display: block;
+    }
+    #bottom{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-bottom: 10px;
+    
+    }
+    
+    .text{
+        font-size: 60px;
+    }
+
+    .infotop{
+        flex-direction: column;
+        margin-left: 0;
+    }
+    main .main__welcome p{
+        color: #000000;
+        font-size: 40px; 
+    }
+    .righttop{
+        display: flex;
+        margin-left: 0;
+        margin-right: 50%;
+        margin-top: 1%;
+    }
+    
+.infotop h3 ul li{
+    list-style-image: none;
+    margin-left: 20px;
+    
+}
+.infotop h3 ul {
+    width: 50%;
+    
+}
+.righttop img{
+    width: 90px;
+    height: 90px;
+}
+
+main .main__welcome p{
+    font-size: 50px;
+}
+    .main__welcome .wrapper{
+    width: 100%;
+    }
+    .fcac{
+        font-size: 40px;
+         
+    }
+    #scrollToTop img {
+    height: 40px;
+    width: 40px;
+    }
+    #scrollToTop  {
+    font-size: 50px;
+    }
+    .Telephones{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+        
+        }
+        .Telephones h3{
+            font-size: 45px;
+        }
+        .Telephones p{
+            font-size: 40px;
+        }
+        
+        .Telephones li{
+            margin-top: 5px;
+            font-size: 40px;
+        
+        }
+
+
+
+
+
+    .topnav a{
+        display: none;
+        font-size: 30px;   
+    }
+    .about__right p{
+        color: #000000  ;
+    }
+    
+    .topnav .icon{
+        float: right;
+        margin-top: -17px;
+        display: block;
+        color:#fff;
+        font-size: 50px;
+    }
+    .header__logo{
+        border: none;
+        margin-bottom: none;
+        font-size: 50px;
+    }
+    .map p{
+        text-align: center;
+    }
+    nav{
+        width: 100%;
+    }
+    .topnav.responsive{
+        position: relative;
+        top: 50px;
+        left: -200px;
+    }
+    header .topnav.responsive{
+        height: 360px;
+    }
+    .topnav.responsive a.icon{
+    position: absolute;
+    top: -50px;
+    right: -200px;
+    border:none;
+    color: #999999;
+    
+    }
+    .topnav.responsive a{
+    float: none;
+    display: block;
+    text-align: left;
+    border-left: 5px solid #fcac45;
+    border-radius: 10px 0px 0px 10px;
+    }
+
+
+
+ 
+ 
+.main__services h1{
+    font-size: 80px;
+  }
+  .discription p {
+      font-size: 50px;
+  }
+  .services__card img {
+    height: 300px;
+    width: 370px;
+      margin-top: 100px;
+  }
+  .services__card h4 {
+font-size: 50px; 
+}
+   .services__card p{
+       font-size: 35px;
+       border-left: 7px solid #fcac45;
+       border-bottom: none;
+   }
+   .time li{
+font-size: 40px;
+   }
+   
+
+   .mw-100{
+    max-width: 100%;
+   }
+   .main__about{
+       flex-direction: column;
+   }
+   .about__right{
+       text-align: center;
+       margin-left: 0;
+   }
+   .about__right p{
+    font-size: 35px;   
+
+}
+   .about__right li{
+       text-align: left;
+       color: black;
+       font-size: 30px;
+   }
+   .about__right h1{
+       font-size: 50px;
+       margin-top: 10px;
+   }
+   footer .social a img{
+height: 70px;
+width: 70px;
+   }
+
+   .info{
+       display: block;
+   }
+   .map{
+    margin-top: 50px;
+    width: 700px;
+    text-align: left;
+    margin-left: 0;
+    width:744px;
+   }    
+   
+
+   .team__cards{
+       flex-direction: column-reverse;
+   }
+   .services__cards{
+    flex-direction: column; 
+   }
+    .info{
+        display: column;
+    }
+    iframe{
+        height: 500px;
+        width: 744px;
+    }
+    .time{
+        border-radius: 10%;
+        font-size: 10px;
+    }
+    .main__team h1{
+        font-size: 80px;
+    }
+    .main__info .wrapper h1{
+        font-size: 80px;
+    }
+       .card{
+        border: 1px dashed #fcac45;
+        background-color: #fff;
+        color: #000;
+    }
+    .name{
+        color: #000;
+        text-align: center;
+    }
+    .card img{
+        height: 240px;
+      width: 245px;
+    }
+    .card .name,.about__position{
+       font-size: 60px;
+    }
+    .photo{
+        
+        background-color: #eee;
+        height: 250px;
+      width: 250px;
+    }
+
+}
+@media screen and (max-width:1200px){
+nav{
+    margin-left: 20%;
+}
+}
+@media screen and (max-width:1105px){
+    nav{
+        margin-left: 10%;
+    }
+    }
+
+
+    

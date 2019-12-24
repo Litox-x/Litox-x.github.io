@@ -1,0 +1,40 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1> Студент </h1>
+    <div>
+        <b> Имя: </b> <span id="q1"></span> <br>
+        <b> Фамилия: </b> <span id="q2"></span> <br>
+        <b> Возраст: </b> <span id="q3"></span> <br>
+        <b> Пол: </b> <span id="q4"></span> <br>
+        <b> Специальность: </b> <span id="q5"></span> 
+    </div>
+    <script type="text/javascript">
+/*пример разбирает XML строку в объект XML DOM и затем
+извлекает некоторую информацию из него посредством скрипта JavaScript*/
+var txt = "<GRUPPA>" +
+
+"<NAME>Сергей</NAME>" +
+"<SURNAME>Сергей</SURNAME>" +
+"<YEAR>19 лет</YEAR>" +
+"<POL>Мужской</POL>" +
+"<SPEC>ПОИМБС 7</SPEC>" +
+
+"</GRUPPA>";
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(txt, "text/xml");
+var x = prompt ("Для получения информации о студенте введите 1");
+while(x!=1) {
+    
+    var x = prompt ("Ошибка значения, получения информации о студенте введите 1");
+} 
+document.getElementById("q1").innerHTML = xmlDoc.getElementsByTagName("NAME")[x-1].childNodes[0].nodeValue;
+document.getElementById("q2").innerHTML = xmlDoc.getElementsByTagName("SURNAME")[x-1].childNodes[0].nodeValue;
+document.getElementById("q3").innerHTML = xmlDoc.getElementsByTagName("YEAR")[x-1].childNodes[0].nodeValue;
+document.getElementById("q4").innerHTML = xmlDoc.getElementsByTagName("POL")[x-1].childNodes[0].nodeValue;
+document.getElementById("q5").innerHTML = xmlDoc.getElementsByTagName("SPEC")[x-1].childNodes[0].nodeValue;
+    </script>
+</body>
+</html>

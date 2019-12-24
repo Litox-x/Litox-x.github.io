@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<!--
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Neuton', serif;
+-->
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Neuton&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="assets/css/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="slider.css">
+    <meta charset="UTF-8">
+    <title>JUGLON - продажа кассовых аппаратов и электронных весов в Минске</title>
+</head>
+
+<body>
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor"
+                d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+            </path>
+
+        </svg>
+    </div>
+
+    <header>
+        <div class="header__logo">
+            <img src="assets/css/images/headerlogo.jpg" alt="logo" width="40px" height="40px">
+            <a href="index.html">
+                <p>Juglon</p>
+            </a>
+        </div>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Главная</a>
+                <a href="Catalog.html">Каталог</a>
+                <a href="#mainserv">Услуги</a>
+                <a href="#info">Контакты</a>
+                <a href="#newsl">Новости</a>
+                <a href="#" id="menu" class="icon">&#9776;</a>
+
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div class="main__welcome">
+            <div class="wrapper">
+                <div class="infotop">
+                    <div class="fcac">
+                        <h3 id="fcac">
+                            <ul>
+
+                                <li>+375 (29) 106-71-35 (Velcom)</li>
+                                <li>+375 (29) 143-72-28 (Velcom)</li>
+                                <li>+375 (29) 860-95-90 (MTS)</li>
+                            </ul>
+
+                            <ul>
+                                <li>(017) 396-87-65 </li>
+                                <li>(017) 363-26-42 </li>
+                                <li>(017) 363-92-19 </li>
+                            </ul>
+                        </h3>
+                    </div>
+                    <div class="righttop">
+                        <h2 id="righttop">
+                            <img src="assets/css/images/email.png" alt="mail" width="30px" height="30px">
+                            <p>juglon@mail.ru</p>
+                        </h2>
+
+                        <h2>
+                            <img src="assets/css/images/map.png" alt="mail" width="30px" height="30px">
+                            <p>г. Минск, ул. Притыцкого, д. 62/2</p>
+                        </h2>
+
+                        <h2> <img src="assets/css/images/back.jpg" alt="back" width="30px" height="30px"> <a
+                                href="form.html" onclick="newMyWindow(this.href); return false;">
+                                <p>Обратная связь</p>
+                            </a></h2>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="main__team">
+            <div class="wrapper">
+                <h1>Каталог</h1>
+                <div class="team__cards">
+                    <div class="photos">
+                        <div class="card" id="top">
+                            <a href="Catalog.html">
+                                <div class="photo"><img src="assets/css/images/cass.png" width="50px" height="50px"
+                                        alt="cash"></div>
+                                <h4 class="name">Кассовое оборудование </h4>
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="CatalogWeight.html">
+                                <div class="photo"><img src="assets/css/images/weight.png" width="50px" height="50px"
+                                        alt="weight"></div>
+                                <h4 class="name">Весовое оборудование</h4>
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="CatalogMoney.html">
+                                <div class="photo"><img src="assets/css/images/cashcase.png" width="50px" height="50px"
+                                        alt="cashcase"></div>
+                                <h4 class="name">Денежные ящики</h4>
+                            </a>
+                        </div>
+                        <div class="card" id="bottom">
+                            <a href="CatalogTerm.html">
+                                <div class="photo"><img src="assets/css/images/terminal.png" width="50px" height="50px"
+                                        alt="terminal"></div>
+                                <h4 class="name">Платежные терминалы </h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slideshowmain">
+                        <div class="slideshow-container">
+
+                            <!-- Full-width images with number and caption text -->
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 4</div>
+                                <a href="Catalog.html"> <img src="assets/css/images/slider-1.jpg" style="width:100%"
+                                        height="450px">
+                                </a>
+                                <div class="text">Кассовое оборудование</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 4</div>
+                                <a href="CatalogWeight.html"> <img src="assets/css/images/slider-2.jpg"
+                                        style="width:100%" height="450px"> </a>
+                                <div class="text">Весовое оборудование</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 4</div>
+                                <a href="CatalogMoney.html"> <img src="assets/css/images/slider-3.jpg"
+                                        style="width:100%" height="450px"> </a>
+                                <div class="text">Денежные ящики</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">4 / 4</div>
+                                <a href="CatalogTerm.html"> <img src="assets/css/images/slider-4.jpg" style="width:100%"
+                                        height="450px">
+                                </a>
+                                <div class="text">Терминалы</div>
+                            </div>
+
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slider" id="main_try">
+                    <div class="slide-list">
+                        <div class="slide-wrap">
+                            <div class="slide-item">
+                                <a href="Goods/Kasbi.html"> <img width="280" height="187"
+                                        src="assets/css/images/kasbi.jpg" alt="" /></a>
+                                <span class="slide-title">
+                                    Касби-03МФ
+                                    <p class="pricetop">289,00 руб.</p>
+                                </span>
+                            </div>
+                            <div class="slide-item">
+                                <a href="Goods/NTS.html"><img width="280" height="187" src="assets/css/images/nts.jpeg"
+                                        alt="" /></a>
+                                <span class="slide-title">
+                                    Миника-1102Ф
+                                    <br>
+                                    <p class="pricetop">261,00 руб.</p>
+                                </span>
+                            </div>
+                            <div class="slide-item">
+                                <a href="Goods/MTT.html"><img width="280" height="187" src="assets/css/images/mtt.jpg"
+                                        alt="" /></a>
+                                <span class="slide-title">
+                                    МТТ-110Ф
+                                    <br>
+                                    <p class="pricetop">270,00 руб.</p>
+                                </span>
+                            </div>
+                            <div class="slide-item">
+                                <a href="Goods/Merkurij185.html"> <img width="280" height="187"
+                                        src="assets/css/images/merkurij185.jpg" alt="" /> </a>
+                                <span class="slide-title">
+                                    Меркурий-185Ф
+                                    <p class="pricetop">285,00 руб.</p>
+                                </span>
+                            </div>
+                            <div class="slide-item">
+                                <a href="Goods/Oka.html"> <img width="280" height="187"
+                                        src="assets/css/images/oka-102k (1).jpg" alt="" /></a>
+                                <span class="slide-title">
+                                    ОКА-102К
+                                    <p class="pricetop">300,00 руб</p>
+                                </span>
+                            </div>
+
+                            <div class="slide-item">
+                                <a href="Goods/OkaMK.html"> <img width="280" height="187"
+                                        src="assets/css/images/okamk.jpg" alt="" /></a>
+                                <span class="slide-title">
+                                    ОКА-МК
+                                    <p class="pricetop">267,00 руб</p>
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="navy prev-slide"></div>
+                    <div class="navy next-slide"></div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+        <div class="wrapper" id="newsl">
+            <p id="centerl">Новости</p>
+
+            <div class="main__news">
+
+
+
+                <div class="main__newsleft" onClick="document.location='news/skko.html'">
+                    <p>ЧТО ТАКОЕ СККО И СКНО?</p>
+                </div>
+
+                <div class="main__newsright">
+                    <div class="newsrightcontent" onClick="document.location='news/graphic_news.html'">
+                        <img src="assets/css/images/plangraphik.jpg" alt="plangraphik">
+                        <p> ГРАФИКИ ПОДКЛЮЧЕНИЯ КАССОВОГО ОБОРУДОВАНИЯ К 
+                            АИС ККО ДЛЯ ИНДИВИДУАЛЬНЫХ ПРЕДПРИНИМАТЕЛЕЙ
+                        </p>
+                    </div>
+                    <div class="newsrightcontent" onClick="document.location='news/act.html'">
+                        <img src="assets/css/images/akti.jpg" alt="">
+                        <p>
+                            НОРМАТИВНЫЕ ПРАВОВЫЕ АКТЫ РЕСПУБЛИКИ БЕЛАРУСЬ
+                        </p>
+                    </div>
+                    <div class="newsrightcontent" onClick="document.location='news/mnis.html'">
+                        <img src="assets/css/images/mnis1.jpg" alt="">
+                        <p>ПУБЛИКАЦИИ МИНИСТЕРСТВА ПО НАЛОГАМ И СБОРАМ РЕСПУБЛИКИ БЕЛАРУСЬ</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="wrapper">
+            <div class="main__about">
+                <div class="about__left">
+                    <img class="mw-100" src="assets/css/images/Juglon.png  " alt="Juglon">
+                </div>
+                <div class="about__right">
+                    <h1>Немного информации о нас</h1>
+                    <p>ТЧУП "Юглон" осуществляет продажу
+                        кассовых аппаратов и электронных весов в Минске с отличным соотношением качества и цены. Причем
+                        мы продаем не только новое оборудование (КСА и электронные весы), но и бывшее в употреблении,
+                        которое вполне
+                        подойдет начинающим предпринимателям, которые только начали завоевывать рынок. </p>
+                    <ul>
+                        <li> Оплата за оборудование может осуществляться как за безналичный расчет, так и за наличный
+                        </li>
+                        <li> "Юглон" осуществляет весь цикл работ с КСА, начиная от настройки и ремонта, и заканчивая
+                            обучения специалистов для работы с кассовым аппаратом.</li>
+                        <li> Наши сотрудники готовы квалифицированно объяснить технические моменты, а также помочь с
+                            выбором наиболее подходящего кассового оборудования или электронных весов, которые наиболее
+                            подойдут именно для вашего предприятия </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main__services" id="mainserv">
+            <div class="wrapper">
+                <h1>Услуги</h1>
+                <div class="discription">
+                    <p><i>Список услуг, предоставляемых нашей компанией</i></p>
+                </div>
+                <div class="services__cards">
+                    <div class="services__card">
+                        <img src="assets/css/images/tch.png" alt="tc">
+                        <h4>Обучение</h4>
+                        <p>Обучение кассиров-операционистов работе на КСА</p>
+                    </div>
+                    <div class="services__card">
+                        <img src="assets/css/images/to (2).png" alt="techo">
+                        <h4>Техническое обслуживание
+                            (Стоимость абоненской платы — от 14 руб/мес *69 руб. - полгода*)
+                        </h4>
+                        <p> Ремонт, продажа кассовых суммирующих аппаратов и специальных
+                            компьютерных систем, включенных в государственный реестр Республики Беларусь и дальнейшее их
+                            обслуживание</p>
+                    </div>
+
+
+                    <div class="services__card">
+                        <img src="assets/css/images/exp.png" alt="exp">
+                        <h4>Экспертизы</h4>
+                        <p>Проведение экспертиз с выдачей актов о
+                            техническом состоянии оборудования</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="main__clients" id="info">
+            <h1>Свяжитесь с нами &darr;</h1>
+            <div class="Telephones">
+                <div class="wrapper">
+                    <h3>Телефоны для связи:</h3>
+                    <ul>
+                        <li>+375 (29) 106-71-35 (Velcom)</li>
+                        <li>+375 (29) 143-72-28 (Velcom)</li>
+                        <li>+375 (29) 860-95-90 (MTS)</li>
+                        <li>(017) 396-87-65 </li>
+                        <li>(017) 363-26-42</li>
+                        <li>(017) 363-92-19 </li>
+                    </ul>
+                    <p>Электронная почта:</p>
+                    <p>juglon@mail.ru</p>
+                </div>
+                <div class="backform">
+                    <a href="form.html" onclick="newMyWindow(this.href); return false;">Обратная связь</a>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+        </div>
+        <div class="main__info">
+            <div class="wrapper">
+                <h1>Где нас найти?</h1>
+
+                <div class="info">
+                    <div class="time">
+                        <ul>
+                            <p class="tops">РЕЖИМ РАБОТЫ</p>
+                            <li>
+                                <p>Понедельник<p><b>9:00 - 17:00</b> </p>
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>Вторник<p><b>9:00 - 17:00</b> </p>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Среда<p><b>9:00 - 17:00</b> </p>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Четверг<p><b>9:00 - 17:00</b> </p>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Пятница <p><b>9:00 - 17:00</b> </p>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Суббота-воскресенье: <p><b> выходной </b></p>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="map">
+                        <p><b>Адрес: г.Минск, ул. Притыцкого, д. 62/2</b></p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.320497137896!2d27.45764821558961!3d53.90828048010061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc52d14d833a7%3A0x341e2e5edf2010f2!2z0YPQuy4g0J_RgNC40YLRi9GG0LrQvtCz0L4gNjIvMiwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1576961141249!5m2!1sru!2sby"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div id="scrollToTop" onclick="goUp();">Наверх<img src="assets/css/images/uparrow5_78514.svg" alt="top"
+                    width="20px" height="20px"></div>
+
+
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://viber.com"> <img src="assets/css/images/viber.png" alt="viber"> </a>
+            <a href="https://telegram.com"> <img src="assets/css/images/telegram.png" alt="tg"></a>
+            <a href="https://skype.com"> <img src="assets/css/images/skype.png" alt="skype"> </a>
+            <a href="https://vk.com"> <img src="assets/css/images/vk.png" alt="vk"> </a>
+            <a href="https://google.com"> <img src="assets/css/images/google-plus.png" alt="Goggle+"> </a>
+
+        </div>
+
+    </footer>
+
+    <script src='main.js'></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="slider.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+.wrapperl{
+    margin: 0 auto;
+    width: 90%;
+}
+#menulittle  {
+    background: #3d404e linear-gradient(to bottom, #6c6c6c 0%, #717171 100%);
+border-radius: 3px;
+box-shadow: 0 1px 0 rgba(236, 237, 237, 0.1) inset, 0 1px 2px rgba(0, 0, 0, 0.1);
+display: table;
+list-style: outside none none;
+margin: 0 auto;
+padding: 0;
+text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+visibility:visible;
+height: 50px;
+}
+.Goods__discription p{
+    font-size: 20px;
+}
+
+#menulittle li {
+    display:block;
+    float: left;
+    position:relative;
+}
+
+#menulittle li a {
+    display:table;
+    padding: 0 20px;
+    height: 50px;
+    text-align: center;
+    font:600 13px/50px arial;
+    color: #fff;
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+border-right: 1px solid rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    transition: 0.5s;
+    -webkit-transition:0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+}
+.Goods__discription ul a li{
+    color: #000000;
+    font-size: 20px;
+   list-style-type: disc;;
+
+}
+.Goods__photo img {
+    border-radius: 20px;
+    border: 3px solid #000000;
+}
+.Goods__discription ul a li:hover{
+    color: #c31432;
+}
+#menulittle li:first-child a {
+border-left: medium none;
+}
+#menulittle li:last-child a {
+border-right: medium none;
+}
+
+#menulittle li:hover a {
+background: #fcac45;
+box-shadow: 0 0 5px rgba(0,0,0,0.3)inset;
+}
+#menulittle li:hover .sub-menu a {
+background: #f3f3f3;
+color: #2f3036;
+height: 40px;
+line-height: 40px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+}
+
+#menulittle li:hover .sub-menu a:hover {
+color: #fcac45;
+}
+
+/* стили для выпадающего списка */
+
+.sub-menu {
+visibility:hidden;
+opacity:0;
+position:absolute;
+z-index:-1;
+transition:visibility 0s linear 0.5s, opacity 0.5s linear;
+-o-transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+-moz-transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+-webkit-transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+left: 0;
+}
+
+#menulittle li:hover > ul{
+visibility:visible;
+opacity:1;
+transition-delay:0s;
+z-index:1;
+}
+
+#menulittle .sub-menu li {
+float:none ;
+    border-top:1px solid #dddddd;
+}
+
+#menulittle .sub-menu li a {
+    width: auto;
+    min-width: 100%;
+    padding: 0 11px;
+    white-space:nowrap;
+    text-align:center;
+    border:none;
+    box-shadow:none;
+}
+
+#menulittle li a:hover + .sub-menu, .sub-menu:hover {
+    display: block;
+}
+.Goods__content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.Goods__photo img{
+    height: 400px;
+    width: 400px;
+}
+.Goods__discription{
+    width: 80%;
+    margin-left: 10px;
+}
+.Goods__discription h2{
+    border-left: #fcac45 solid 3px;
+    background-color: #000000;
+    color: #eee;
+    padding-left: 35px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+.Goods__discription p{
+    margin-left: 25px;
+}
+.Goods__discription ul li {
+    margin-left: 25px;
+}
+.Goods__discription ul{
+    margin-bottom: 15px;
+    background-color: #e0e0e0;
+}
+
+/* стили для адаптивности */
+
+@media screen and (max-width : 1010px){
+
+.sub-menu {
+    position: static;
+    display: none;                
+}
+.Goods__content{
+    flex-direction: column;
+}
+.Goods__photo img {
+    height: 700px;
+    width: 700px;
+}
+.sub-menu li {
+    margin-bottom: 1px;
+}
+#menulittle li, #menulittle li a {
+    width: 100%;
+    border:none;
+    padding:0px;
+    font-size: 50px;
+}
+    
+#menulittle .sub-menu li a {
+    padding:0px;
+}
+    
+#menulittle  {
+width: 100%;
+}
+}

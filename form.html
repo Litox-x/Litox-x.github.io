@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Свяжитесь с нами!</title>
+    <link rel="stylesheet" href="assets/css/form.css">
+</head>
+<body>
+                    <h2>Заполните форму для обратной связи</h2>
+    <form class="form" action="order.php" method="POST">
+        <p>
+            <label for="name"><span class="formTextRed">*</span> ФИО:</label>
+            <input type="text" name="name" id="name" />
+        </p>
+        <p>
+            <label for="email"><span class="formTextRed">*</span> Email:</label>
+            <input type="text" name="email" id="email" />
+        </p>
+        <p>
+            <label for="text"><span class="formTextRed">*</span> Отзыв:</label>
+            <textarea rows="10" name="text" id="text"></textarea>
+        </p>
+        <p class="submit">
+            <input type="submit" value="Отправить" />
+        </p>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script>
+        // Отправка данных на сервер
+        $('#form').trigger('reset');
+        $(function () {
+            'use strict';
+            $('#form').on('submit', function (e) {
+                e.preventDefault();
+                $.ajax({
+                    url: 'order.php',
+                    type: 'POST',
+                    contentType: false,
+                    processData: false,
+                    data: new FormData(this),
+                    success: function (msg) {
+                        console.log(msg);
+                        if (msg == 'ok') {
+                            alert('Сообщение отправлено');
+                            $('#form').trigger('reset'); // очистка формы
+                        } else {
+                            alert('Ошибка');
+                        }
+                    }
+                });
+            });
+        });
+    </script>   
+</body>
+</html>

@@ -9,7 +9,7 @@ $email = $_POST['email'];
 $text = $_POST['text'];
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
-    $msg = "ok";
+    $msg = "Письмо успешно отправлено";
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";                                          
     $mail->SMTPAuth   = true;
@@ -32,11 +32,10 @@ try {
         <b>Почта:</b> $email<br><br>
         <b>Сообщение:</b><br>$text";
 // Проверяем отравленность сообщения
-/*
 if ($mail->send()) {
     echo "$msg";
 } else {
-echo "Nevernie nastroiki pochti";
+echo "Попробуйте еще раз";
 }
 } catch (Exception $e) {
     echo "Prichina oshibki {$mail->ErrorInfo}";

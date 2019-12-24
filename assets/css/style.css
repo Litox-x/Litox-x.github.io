@@ -988,7 +988,8 @@ width: 70px;
       width: 245px;
     }
     .card .name,.about__position{
-       font-size: 60px;
+       font-size: 45px;
+       font-weight: bold;
     }
     .photo{
         

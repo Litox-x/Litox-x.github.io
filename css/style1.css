@@ -83,10 +83,12 @@ ul { list-style:none;}
 input::-moz-focus-inner, button::-moz-focus-inner {border:0;padding:0;}
 textarea { overflow:auto; resize:none;}
 img, li { vertical-align:top}
-input[type="text"]: focus {   outline: none;	}
+input[type="text"]:focus {   outline: none;	}
 input::-ms-clear {   display: none;    width : 0;  height: 0;}
-/*reset.css end*/	
-
+/*reset.css end*/
+.messenger-link {display: inline-block;margin: 0 auto;}
+.messenger-icon {width: 40px;height: 40px;transition: transform 0.2s;}
+.messenger-icon:hover {transform: scale(1.1);}
 #datetimepicker{border: none!important;}
 /*cusel begin*/
 .cusel { font-size:14px;  display:inline-block; vertical-align:top; height:29px; position:relative; width:100%; border:1px solid #c1a800; background:#ffe400;background:-webkit-linear-gradient(top, #ffe400, #ffde00);background:-o-linear-gradient(top, #ffe400, #ffde00);background:-moz-linear-gradient(top, #ffe400, #ffde00);background:-ms-linear-gradient(top, #ffe400, #ffde00);background:linear-gradient(top, #ffe400, #ffde00);   }
@@ -1258,7 +1260,7 @@ input:-ms-input-placeholder      {color:#000;}
 #order_gazel .form_box dd.dd2 { width:54%;}
 
 #cost_on_loaders_work .form_box dt.dt2 { width:47%;}
-#cost_on_loaders_work .form_box dd.dd2 { width:53%;} 
+#cost_on_loaders_work .form_box dd.dd2 { width:53%;}
 
 #reviews .video iframe, #reviews .video video { height:200px;}
 #order_form_block .p3 { padding:0}
@@ -1282,7 +1284,5 @@ input:-ms-input-placeholder      {color:#000;}
 #calculation  .minus:before, #calculation  .plus:before, #calculation  .plus:after { margin:-6px 0 0 -6px; }
 
 }
-.messenger-link {display: inline-block;margin: 0 auto;}
-.messenger-icon {width: 40px;height: 40px;transition: transform 0.2s;}
-.messenger-icon:hover {transform: scale(1.1);}
+
 /*

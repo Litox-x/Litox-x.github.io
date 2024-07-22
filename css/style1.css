@@ -1281,6 +1281,8 @@ input:-ms-input-placeholder      {color:#000;}
 #calculation  .plus { right:0;}
 #calculation  .minus:before, #calculation  .plus:before, #calculation  .plus:after { margin:-6px 0 0 -6px; }
 
-
-
+}
+.messenger-link {display: inline-block;margin: 0 auto;}
+.messenger-icon {width: 40px;height: 40px;transition: transform 0.2s;}
+.messenger-icon:hover {transform: scale(1.1);}
 /*
